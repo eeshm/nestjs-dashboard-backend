@@ -2,9 +2,7 @@ import { Controller, Get, UseInterceptors } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
 import { DashboardService } from '../services/dashboard.service';
 import { TransformInterceptor } from '../../common/interceptors/transform.interceptor';
-import {
-    CustomerSatisfactionResponseDto,
-} from '../dto/customer-satisfaction.dto'
+import {CustomerSatisfactionResponseDto} from '../dto/customer-satisfaction.dto'
 import {MetricsResponseDto} from '../dto/metrics.dto'
 import {VisitorInsightsResponseDto} from '../dto/visitor-insights.dto'
 import {RevenueResponseDto} from '../dto/revenue.dto'

@@ -30,7 +30,7 @@ import { TransformInterceptor } from './common/interceptors/transform.intercepto
       imports: [ConfigModule],
       useFactory: async (configService: ConfigService) => ({
         type: 'postgres',
-        url: configService.get<string>('DATABASE_URL') || process.env.DATABASE_URL,
+       url: configService.get<string>('database.url'),
         ssl: {
           rejectUnauthorized: false, // Required for Neon
         },
