@@ -11,16 +11,16 @@ export const mockMetrics: MetricItemDto[] = [
   {
     id: 'total_sales',
     title: 'Total Sales',
-    value: '$1,250,000',
-    subtitle: '+3% from yesterday',
-    percentage: '+3%',
+    value: '$1k',
+    subtitle: '+8% from yesterday',
+    percentage: '+8%',
     color: 'pink',
     icon: '💰',
   },
   {
     id: 'total_orders',
     title: 'Total Orders',
-    value: 4580,
+    value: 300,
     subtitle: '+5% from yesterday',
     percentage: '+5%',
     color: 'orange',
@@ -29,7 +29,7 @@ export const mockMetrics: MetricItemDto[] = [
   {
     id: 'products_sold',
     title: 'Products Sold',
-    value: 2340,
+    value: 5,
     subtitle: '+1.2% from yesterday',
     percentage: '+1.2%',
     color: 'green',
@@ -38,7 +38,7 @@ export const mockMetrics: MetricItemDto[] = [
   {
     id: 'new_customers',
     title: 'New Customers',
-    value: 234,
+    value: 8,
     subtitle: '0.5% from yesterday',
     percentage: '+0.5%',
     color: 'purple',
@@ -53,7 +53,7 @@ export const mockRevenueData: RevenueDataDto[] = [
   { name: 'Thursday', online: 20000, offline: 5000, total: 25000 },
   { name: 'Friday', online: 12000, offline: 15000, total: 27000 },
   { name: 'Saturday', online: 22000, offline: 18000, total: 40000 },
-  { name: 'Sunday', online: 25000, offline: 12000, total: 37000 },
+  { name: 'Sunday', online: 20000, offline: 12000, total: 37000 },
 ];
 
 export const mockCustomerSatisfactionData: CustomerSatisfactionDataDto[] = [
@@ -74,8 +74,8 @@ export const mockVisitorInsightsData: VisitorInsightsDataDto[] = [
   { name: 'Aug', loyalCustomers: 350, newCustomers: 320, uniqueCustomers: 180 },
   { name: 'Sep', loyalCustomers: 300, newCustomers: 280, uniqueCustomers: 160 },
   { name: 'Oct', loyalCustomers: 280, newCustomers: 250, uniqueCustomers: 140 },
-  { name: 'Nov', loyalCustomers: 250, newCustomers: 180, uniqueCustomers: 120 },
-  { name: 'Dec', loyalCustomers: 320, newCustomers: 220, uniqueCustomers: 160 },
+  { name: 'Nov', loyalCustomers: 180, newCustomers: 200, uniqueCustomers: 120 },
+  { name: 'Dec', loyalCustomers: 150, newCustomers: 220, uniqueCustomers: 160 },
 ];
 
 export const mockTopProductsData: TopProductDto[] = [
@@ -110,13 +110,5 @@ export const mockTopProductsData: TopProductDto[] = [
     sales: '25%',
     revenue: '$156,000',
     unitsSold: 624,
-  },
-  {
-    id: 5,
-    name: 'Gaming Accessories',
-    popularity: 35,
-    sales: '35%',
-    revenue: '$98,750',
-    unitsSold: 987,
   },
 ];
