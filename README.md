@@ -1,4 +1,3 @@
-```markdown
 # 📊 Sales Dashboard Backend
 
 A production-ready NestJS backend API for sales analytics dashboard with TypeScript, PostgreSQL, and comprehensive documentation.
