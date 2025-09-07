@@ -1,7 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
-import {
-    CustomerSatisfactionResponseDto,
-} from '../dto/customer-satisfaction.dto'
+import {CustomerSatisfactionResponseDto} from '../dto/customer-satisfaction.dto'
 import {MetricsResponseDto} from '../dto/metrics.dto'
 import {VisitorInsightsResponseDto} from '../dto/visitor-insights.dto'
 import {RevenueResponseDto} from '../dto/revenue.dto'

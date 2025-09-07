@@ -30,11 +30,10 @@ import { TransformInterceptor } from './common/interceptors/transform.intercepto
       imports: [ConfigModule],
       useFactory: async (configService: ConfigService) => ({
         type: 'postgres',
-        host: configService.get('database.host'),
-        port: configService.get('database.port'),
-        username: configService.get('database.username'),
-        password: configService.get('database.password'),
-        database: configService.get('database.database'),
+        url: configService.get<string>('DATABASE_URL') || process.env.DATABASE_URL,
+        ssl: {
+          rejectUnauthorized: false, // Required for Neon
+        },
         entities: [User, Product, Order, Customer],
         synchronize: configService.get('app.nodeEnv') === 'development',
         logging: configService.get('app.nodeEnv') === 'development',
@@ -54,4 +53,4 @@ import { TransformInterceptor } from './common/interceptors/transform.intercepto
     },
   ],
 })
-export class AppModule {}
+export class AppModule { }
